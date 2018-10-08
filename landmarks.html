@@ -87,69 +87,69 @@
 <label for="username">Username:</label><img src="images/required.gif"  alt="Required Field" class="img" />
 </dt>
 <dd><input id="username" class="input" type="text" value="" maxlength="30" size="20" name="username"  aria-required="true" aria-describedby="username_error"><br />
-        <span id="username_error">&nbsp;</span><br />
+        <span id="username_error"  role="alert">&nbsp;</span><br />
 </dd>
 <dt>
     <label for="password">Password:</label>
-    <img src="images/required.gif"  alt="Required Field" />
+    <img src="images/required.gif"  alt="Required Field" aria-required="true" aria-describedby="password_error"/>
 </dt>
 <dd>
     <input type="text" name="password" size="20" id="password" value="" class="input" /><br />
-    <span id="password_error">&nbsp;</span>
+    <span id="password_error"  role="alert">&nbsp;</span>
 </dd>
 <dt>
     <label for="email">Email:</label>
-	<img src="images/required.gif" class="img" />
+	<img src="images/required.gif" class="img" aria-required="true" aria-describedby="email_error"/>
 </dt>
 <dd>    
     <input type="text" name="email" size="30" id="email" value="" class="input"/><br />
-    <span id="email_error">&nbsp;</span>
+    <span id="email_error"  role="alert">&nbsp;</span>
 </dd>
 <dt>
     <label for="fname">First Name:</label>
 </dt>
 <dd>
-    <input type="text" name="fname" size="20" id="fname" value="" class="input" />
-    <span id="fname_error">&nbsp;</span>
+    <input type="text" name="fname" size="20" id="fname" value="" class="input" aria-describedby="fname_error" />
+    <span id="fname_error"  role="alert">&nbsp;</span>
 </dd>
 <dt>
     <label for="lname">Last Name:</label>
 </dt>
 <dd>
-    <input type="text" name="lname" size="20" id="lname" value="" class="input" />  
-    <span id="lname_error">&nbsp;</span> 
+    <input type="text" name="lname" size="20" id="lname" value="" class="input" aria-describedby="lname_error"/>  
+    <span id="lname_error"  role="alert">&nbsp;</span> 
 </dd>
 
 <dt>
     <label for="org">Organization</label>:
 </dt>
 <dd>
-    <input type="text"  class="input" id="org" name="organization" value="" size="30" />
-    <span id="org_error">&nbsp;</span>
+    <input type="text"  class="input" id="org" name="organization" value="" size="30" aria-describedby="org_error"/>
+    <span id="org_error"  role="alert">&nbsp;</span>
 </dd>
 <dt>
     <label for="address">Street Address</label>: 
 </dt>
 <dd>
-    <textarea  id="address"  class="input" name="address" cols="35" rows="3"></textarea>
-    <span id="address_error">&nbsp;</span>
+    <textarea  id="address"  class="input" name="address" cols="35" rows="3" aria-describedby="address_error"></textarea>
+    <span id="address_error"  role="alert">&nbsp;</span>
 </dd>
 <dt>
     <label for="city">City</label>: 
 </dt>
 <dd>
-    <input type="text" id="city" name="city"  class="input" value="" >
-    <span id="city_error">&nbsp;</span>
+    <input type="text" id="city" name="city"  class="input" value="" aria-describedby="city_error">
+    <span id="city_error"  role="alert">&nbsp;</span>
 </dd>
 <dt>
     <label for="country">Country</label>: 
 </dt>
 <dd>
-    <select name="country" id="country">
+    <select name="country" id="country" aria-describedby="country_error">
         <option value="ca">Canada</option>
         <option value="usa">USA</option>
     </select>
-    <span id="country_error">&nbsp;</span>
+    <span id="country_error"  role="alert">&nbsp;</span>
 </dd>
 
 <dt>
@@ -157,22 +157,22 @@
                 <label for="state">State:</label>
     </dt>
     <dd class="state_block">
-                <input type="text" name="state" id="state" maxlength="2" class="input"/>
-                <span id="state_error">&nbsp;</span>
+                <input type="text" name="state" id="state" maxlength="2" class="input" aria-describedby="state_error"/>
+                <span id="state_error  role="alert"">&nbsp;</span>
     </dd>
      <dt class="state_block">   
      <label for="zip">ZIP Code:</label>
      </dt>
      <dd class="state_block">
-                    <input type="text" name="zip" id="zip"  class="input"/>
-                    <span id="zip_error">&nbsp;</span><br />
+                    <input type="text" name="zip" id="zip"  class="input" aria-describedby="zip_error"/>
+                    <span id="zip_error"  role="alert">&nbsp;</span><br />
     </dd>
 
     <dt class="prov_block">
     <label for="province">Province:</label>
     </dt>
     <dd class="prov_block">
-                    <select name="province" id="province" class="input">
+                    <select name="province" id="province" class="input" aria-describedby="province_error">
                         <option value="BC">BC</option>
                         <option value="AB">AB</option>
                         <option value="SK">SK</option>
@@ -187,22 +187,22 @@
                         <option value="NV">Nunavut</option>
                         <option value="NW">NWT</option>
                     </select>
-                    <span id="province_error">&nbsp;</span>
+                    <span id="province_error"  role="alert">&nbsp;</span>
     </dd>
     <dt class="prov_block">
                 <label for="postal">Postal Code:</label>
     </dt>
     <dd class="prov_block">
-                    <input type="text" name="postal" id="postal" class="input"/>
-                    <span id="postal_error">&nbsp;</span><br />
+                    <input type="text" name="postal" id="postal" class="input" aria-describedby="postal_error"/>
+                    <span id="postal_error"  role="alert">&nbsp;</span><br />
     </dd>
 
 <dt>
     <label for="tele">Telephone</label>: 
 </dt>
 <dd>
-    <input type="text" id="tele" name="telephone"  class="input" value="" >
-    <span id="tele_error">&nbsp;</span>
+    <input type="text" id="tele" name="telephone"  class="input" value="" aria-describedby="tele_error">
+    <span id="tele_error"  role="alert">&nbsp;</span>
 </dd>
 </dl>
 <br  style="clear:both;"/>
