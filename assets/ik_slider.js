@@ -271,7 +271,7 @@
 	* @param {object} event.data.plugin - Reference to plugin.
 	*/
 	Plugin.prototype.onKeyDown = function (event) {
-	   //alert(event.keyCode);
+	   
 	    var $elem, plugin, value;
 	   
 	    $elem = $(this);
@@ -287,7 +287,7 @@
 	            break;
 	           
 	        case ik_utils.keys.end:
-	        alert("end");
+	        
 	            plugin.setValue(plugin.options.maxValue);
 	            break;
 	       
@@ -299,7 +299,7 @@
 	            break;
 	       
 	        case ik_utils.keys.home:
-	            alert("homne");
+	            
 	            plugin.setValue(plugin.options.minValue);
 	            break;
 	           
